@@ -94,7 +94,7 @@ export default function CartaPage() {
     },
     {
       title: { es: "HAMBURGUESAS", en: "BURGERS", eu: "HAMBURGESAK" },
-      image: "/hamburguesa.jpg",
+      image: "/hamburguesa1.jpg",
       items: [
         {
           name: { es: "Hamburguesa de Carne", en: "Beef Burger", eu: "Haragi Burger" },
@@ -134,7 +134,7 @@ export default function CartaPage() {
     },
     {
       title: { es: "ENSALADAS", en: "SALADS", eu: "ENTSALADAK" },
-      image: "/ensalada.jpg",
+      image: "/ensalada1.jpg",
       items: [
         {
           name: { es: "Ensalada de Pasta", en: "Pasta Salad", eu: "Pasta entsalada" },
@@ -152,7 +152,7 @@ export default function CartaPage() {
     },
     {
       title: { es: "RACIONES", en: "PORTIONS", eu: "PORTZIOAK" },
-      image: "/racion_jamon.jpg",
+      image: "/racion1.jpg",
       items: [
         { name: { es: "Jamón Ibérico", en: "Iberian Ham", eu: "Jamón Ibérico" } },
         { name: { es: "Queso (Curado o Semi)", en: "Cheese (Cured or Semi-Cured)", eu: "Gazta (Izoztua edo Erdi-Izoztua)" } },

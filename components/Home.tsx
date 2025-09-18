@@ -12,13 +12,13 @@ import Link from "next/link";
 
 const texts = {
   es: {
-    heroTitle: "Bienvenido a Bar Siglo XX",
+    heroTitle: "Bienvenido a Bar SigloXX",
     heroSubtitle: "Un lugar único en Portugalete",
     heroDescription: "Disfruta de nuestra tradición, sabores y ambiente familiar desde 1967.",
     heroImageAlt: "Terraza del Bar Siglo XX",
     heroCircularText: "Tradición · Sabor · Familia · Portugalete",
     btnReserve: "Reservar ahora",
-    btnMenu: "Ver menú",
+    btnMenu: "Ver carta",
     welcomeTitle: "Bienvenidos",
     welcomeDescription: "El Bar Siglo XX combina historia, buena comida y un ambiente inigualable.",
     featYearsTitle: "Más de 50 años",
@@ -207,7 +207,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               onClick={() => setIsModalOpen(true)}
-              className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-serif text-lg px-8 py-4 rounded-full shadow-2xl transition-all duration-300"
+              className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-serif text-lg px-8 py-4 rounded-full shadow-2xl transition-all duration-300 cursor-pointer"
             >
               <Phone className="mr-2 h-5 w-5" />
               {t.btnReserve}
@@ -215,7 +215,7 @@ export default function Home() {
             <Link href="/carta">
               <Button
                 variant="default"
-                className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground font-serif text-lg px-8 py-4 rounded-full shadow-2xl transition-all duration-300"
+                className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground font-serif text-lg px-8 py-4 rounded-full shadow-2xl transition-all duration-300 cursor-pointer"
               >
                 {t.btnMenu}
               </Button>
@@ -290,24 +290,18 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                src: "/especialidad.jpg",
+                src: "/referente1.jpg",
                 alt: t.exp1Alt,
-                title: t.exp1Title,
-                desc: t.exp1Desc,
               },
               {
-                src: "/especialidad.jpg",
+                src: "/barra.jpg",
                 alt: t.exp2Alt,
-                title: t.exp2Title,
-                desc: t.exp2Desc,
               },
               {
-                src: "/especialidad.jpg",
+                src: "/barra1.jpg",
                 alt: t.exp3Alt,
-                title: t.exp3Title,
-                desc: t.exp3Desc,
               },
-            ].map(({ src, alt, title, desc }, i) => (
+            ].map(({ src, alt }, i) => (
               <Card
                 key={i}
                 className="group overflow-hidden border-border hover:border-primary/50 transition-all duration-500 transform hover:-translate-y-2"
@@ -321,8 +315,6 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="text-2xl font-serif font-bold mb-2">{title}</h3>
-                    <p className="text-sm opacity-90">{desc}</p>
                   </div>
                 </div>
               </Card>
@@ -430,7 +422,7 @@ export default function Home() {
 
             <div className="text-center mt-12">
               <Link href="/contacto">
-                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-serif text-lg px-12 py-4 rounded-full shadow-2xl transition-all duration-300">
+                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-serif text-lg px-12 py-4 rounded-full shadow-2xl transition-all duration-300 cursor-pointer">
                   {t.contactButton}
                 </Button>
               </Link>

@@ -61,7 +61,27 @@ export default function MenuSection({ title, items, index, image, alwaysVisible 
       <Card className="bg-black text-card-foreground flex flex-col gap-4 sm:gap-6 rounded-xl border shadow-sm mx-auto w-full max-w-3xl shadow-lg hover:shadow-xl transition-all">
         {image && (
           <div className="w-full h-40 sm:h-64 relative">
-            <Image src={image} alt={title} fill className="object-cover rounded-t-xl" />
+            <div className="relative w-full h-40 sm:h-64 rounded-t-xl overflow-hidden">
+  {/* Fondo extendido y difuminado */}
+  <Image
+    src={image}
+    alt={title}
+    fill
+    className="object-cover blur-xl scale-110"
+  />
+
+  {/* Imagen principal encima */}
+  <div className="absolute inset-0 flex items-center justify-center">
+    <Image
+      src={image}
+      alt={title}
+      width={600}   // ajusta según tu caso
+      height={400}
+      className="object-contain relative z-10"
+    />
+  </div>
+</div>
+
           </div>
         )}
 
