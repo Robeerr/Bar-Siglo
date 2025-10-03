@@ -81,7 +81,7 @@ export default function Footer() {
 
         {/* REDES SOCIALES */}
         <div className="mt-10 text-center">
-          <a href="https://www.instagram.com/barsigloxx1875/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-muted-foreground hover:text-primary transition-colors">
+          <a href="https://www.instagram.com/barsigloxxportugalete/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-muted-foreground hover:text-primary transition-colors">
             <Instagram className="h-5 w-5 mr-2" />
             {t.followUs}
           </a>
